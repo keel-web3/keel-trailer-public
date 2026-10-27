@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "name": "editor-sample",
+  "fps": 12,
+  "seed": 7,
+  "tempo": {
+    "beatSeconds": 0.413,
+    "firstDownbeat": 0.25,
+    "audioSource": "bed"
+  },
+  "sources": [
+    {
+      "id": "a",
+      "kind": "image",
+      "path": "a.png",
+      "pixelArt": true
+    },
+    {
+      "id": "b",
+      "kind": "image",
+      "path": "b.png",
+      "pixelArt": true
+    },
+    {
+      "id": "bed",
+      "kind": "audio",
+      "path": "bed.wav"
+    }
+  ],
+  "shots": [
+    {
+      "id": "base-and-title",
+      "kind": "image",
+      "source": "a",
+      "startBeat": 0,
+      "beats": 2.2,
+      "caption": {
+        "lines": [
+          "KEEL"
+        ],
+        "font": "font.ttf",
+        "fontSize": 8,
+        "scale": 1,
+        "color": "#000000",
+        "typingCps": 6
+      }
+    },
+    {
+      "id": "baked-dither",
+      "kind": "image",
+      "source": "b",
+      "startBeat": 2.2,
+      "beats": 2,
+      "transition": {
+        "type": "dither",
+        "beats": 0.5,
+        "pixelScale": 2
+      }
+    },
+    {
+      "id": "card",
+      "kind": "card",
+      "startBeat": 4.2,
+      "beats": 1,
+      "text": {
+        "lines": [
+          "EDIT"
+        ],
+        "font": "font.ttf",
+        "fontSize": 8,
+        "color": "#ffffff",
+        "background": "#281034"
+      }
+    }
+  ],
+  "audio": [
+    {
+      "id": "music",
+      "source": "bed",
+      "role": "bed",
+      "startBeat": 0,
+      "beats": 5.2,
+      "gain": 0.8,
+      "fadeOut": 0.1,
+      "duck": [
+        {
+          "startBeat": 1,
+          "beats": 1,
+          "gain": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sfx",
+      "source": "bed",
+      "role": "sfx",
+      "startBeat": 1.3,
+      "in": 0.7,
+      "out": 0.85,
+      "gain": 0.6,
+      "fadeIn": 0.01
+    }
+  ],
+  "targets": [
+    {
+      "id": "wide",
+      "width": 160,
+      "height": 90
+    },
+    {
+      "id": "square",
+      "width": 96,
+      "height": 96
+    }
+  ]
+}

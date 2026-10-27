@@ -1,0 +1,23 @@
+{
+  "origin": "scripts/test-clips.ts; original procedural pixels; no audio",
+  "clips": [
+    {
+      "file": "test-grid.mp4",
+      "bytes": 4274,
+      "sha256": "344b1f5102c9208633a394b6751fbeb072d49824d729448289f84e6d8b656ec1",
+      "width": 96,
+      "height": 54,
+      "fps": 12,
+      "frames": 24
+    },
+    {
+      "file": "test-orbit.mp4",
+      "bytes": 7120,
+      "sha256": "b299981db317f3e20b55aedde1790b0e03681fc37e94103db5ac90e831c3e288",
+      "width": 96,
+      "height": 54,
+      "fps": 12,
+      "frames": 24
+    }
+  ]
+}

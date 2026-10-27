@@ -1,0 +1,10 @@
+{
+  "schema": "keel-plugin@1",
+  "id": "keel/trailer",
+  "version": "0.2.0",
+  "entry": "dist/mcp.js",
+  "capabilities": [
+    "mcp"
+  ],
+  "description": "Deterministic trailers and visual/code inspection."
+}

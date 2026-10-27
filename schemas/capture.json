@@ -1,0 +1,344 @@
+{
+  "type": "object",
+  "properties": {
+    "adapter": {
+      "enum": [
+        "web",
+        "gameboy",
+        "video",
+        "image"
+      ]
+    },
+    "options": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "url": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "cinematicFlag": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "width": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "height": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "fps": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "frames": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "epoch": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "readySelector": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "readyAttribute": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "readyValue": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "readyFrames": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rectSelectors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "stateAttributes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4096
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "inspectionFrames": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "probeGlobal": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "frame": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "action": {
+            "enum": [
+              "click",
+              "scroll",
+              "mark"
+            ]
+          },
+          "selector": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "endFrame": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "fromX": {
+            "type": "number"
+          },
+          "fromY": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "frame",
+          "action"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "rom": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "guestRom": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "symbolsPath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "reads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "address": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "bank": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "symbol": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "side": {
+            "enum": [
+              "host",
+              "guest"
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "frame": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "side": {
+            "enum": [
+              "host",
+              "guest"
+            ]
+          },
+          "action": {
+            "enum": [
+              "press",
+              "release",
+              "write",
+              "mark"
+            ]
+          },
+          "button": {
+            "enum": [
+              "a",
+              "b",
+              "start",
+              "select",
+              "up",
+              "down",
+              "left",
+              "right"
+            ]
+          },
+          "address": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "bank": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "value": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          }
+        },
+        "required": [
+          "frame",
+          "action"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 10000
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "object",
+          "properties": {
+            "bank": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "readHook": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "currentByte": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "bank",
+            "readHook",
+            "currentByte"
+          ],
+          "additionalProperties": false
+        },
+        "guest": {
+          "type": "object",
+          "properties": {
+            "bank": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "readHook": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "currentByte": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "bank",
+            "readHook",
+            "currentByte"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "host",
+        "guest"
+      ],
+      "additionalProperties": false
+    },
+    "cgb": {
+      "type": "boolean"
+    },
+    "warmupFrames": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "adapter"
+  ],
+  "additionalProperties": false
+}

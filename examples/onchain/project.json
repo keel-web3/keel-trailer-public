@@ -1,0 +1,375 @@
+{
+  "program": {
+    "version": 1,
+    "seed": 42,
+    "width": 320,
+    "height": 180,
+    "fps": 60,
+    "bpm": 120,
+    "ppq": 96,
+    "duration": 1536,
+    "actions": [
+      {
+        "name": "speed",
+        "arity": 1
+      },
+      {
+        "name": "hue",
+        "arity": 1
+      }
+    ],
+    "cues": [
+      {
+        "tick": 0,
+        "action": 1,
+        "args": [
+          190
+        ]
+      },
+      {
+        "tick": 192,
+        "action": 0,
+        "args": [
+          1
+        ],
+        "to": [
+          5
+        ],
+        "duration": 384,
+        "ease": "smooth"
+      },
+      {
+        "tick": 768,
+        "action": 1,
+        "args": [
+          310
+        ]
+      },
+      {
+        "tick": 1152,
+        "action": 0,
+        "args": [
+          5
+        ],
+        "to": [
+          1
+        ],
+        "duration": 384,
+        "ease": "smooth"
+      }
+    ]
+  },
+  "modules": [
+    "keel/core"
+  ],
+  "adapterPath": "examples/onchain/scene.ts",
+  "music": {
+    "mode": "score",
+    "score": {
+      "version": 1,
+      "bpm": 120,
+      "ppq": 96,
+      "duration": 1536,
+      "instruments": [
+        {
+          "wave": "sawtooth",
+          "attack": 5,
+          "decay": 100,
+          "sustain": 500,
+          "release": 100,
+          "gain": 150
+        },
+        {
+          "wave": "triangle",
+          "attack": 5,
+          "decay": 100,
+          "sustain": 600,
+          "release": 100,
+          "gain": 180
+        }
+      ],
+      "notes": [
+        {
+          "tick": 0,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 0,
+          "duration": 144,
+          "pitch": 36,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 48,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 96,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 144,
+          "duration": 36,
+          "pitch": 70,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 192,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 192,
+          "duration": 144,
+          "pitch": 36,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 240,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 288,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 336,
+          "duration": 36,
+          "pitch": 75,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 384,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 384,
+          "duration": 144,
+          "pitch": 39,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 432,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 480,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 528,
+          "duration": 36,
+          "pitch": 70,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 576,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 576,
+          "duration": 144,
+          "pitch": 34,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 624,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 672,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 720,
+          "duration": 36,
+          "pitch": 75,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 768,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 768,
+          "duration": 144,
+          "pitch": 36,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 816,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 864,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 912,
+          "duration": 36,
+          "pitch": 70,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 960,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 960,
+          "duration": 144,
+          "pitch": 36,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 1008,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1056,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1104,
+          "duration": 36,
+          "pitch": 75,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1152,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1152,
+          "duration": 144,
+          "pitch": 39,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 1200,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1248,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1296,
+          "duration": 36,
+          "pitch": 70,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1344,
+          "duration": 36,
+          "pitch": 60,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1344,
+          "duration": 144,
+          "pitch": 34,
+          "velocity": 100,
+          "instrument": 1
+        },
+        {
+          "tick": 1392,
+          "duration": 36,
+          "pitch": 63,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1440,
+          "duration": 36,
+          "pitch": 67,
+          "velocity": 90,
+          "instrument": 0
+        },
+        {
+          "tick": 1488,
+          "duration": 36,
+          "pitch": 75,
+          "velocity": 90,
+          "instrument": 0
+        }
+      ]
+    }
+  }
+}

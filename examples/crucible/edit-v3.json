@@ -1,0 +1,607 @@
+[
+  {
+    "kind": "opening",
+    "b": 16,
+    "match": [
+      14.5,
+      16
+    ],
+    "sfx": [
+      [
+        12,
+        "chime",
+        0.9
+      ]
+    ],
+    "keys": [
+      [
+        0,
+        "state:running|undefined",
+        0
+      ],
+      [
+        1.5,
+        "state:running|undefined",
+        36
+      ],
+      [
+        9,
+        "state:running|scroll",
+        0
+      ],
+      [
+        12,
+        "state:running|hold",
+        0
+      ],
+      [
+        13.5,
+        "state:done|hold",
+        -1
+      ],
+      [
+        13.51,
+        "state:done|hold",
+        1
+      ],
+      [
+        15,
+        "state:done|hold",
+        14
+      ],
+      [
+        16,
+        "state:done|hold",
+        48
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "title",
+    "at": [
+      "title",
+      0,
+      0.3
+    ],
+    "b": 2,
+    "fx": "drop",
+    "energy": true,
+    "sfx": [
+      [
+        0,
+        "flash",
+        1.0
+      ],
+      [
+        0,
+        "glitch",
+        0.8
+      ]
+    ]
+  },
+  {
+    "kind": "card",
+    "lines": [
+      "MAKE SOMETHING."
+    ],
+    "b": 2,
+    "fx": "cut"
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "pick",
+        3,
+        -40
+      ],
+      [
+        2,
+        "merge",
+        3,
+        0
+      ],
+      [
+        3,
+        "merge",
+        3,
+        110
+      ],
+      [
+        4.5,
+        "merge",
+        3,
+        235
+      ],
+      [
+        5,
+        "flash",
+        3,
+        0
+      ],
+      [
+        5.5,
+        "flash",
+        3,
+        40
+      ],
+      [
+        6,
+        "flash",
+        3,
+        85
+      ],
+      [
+        8,
+        "flash",
+        3,
+        140
+      ]
+    ],
+    "b": 8,
+    "fx": "glitch-in",
+    "energy": true,
+    "sfx": [
+      [
+        2,
+        "mix",
+        0.9
+      ],
+      [
+        5,
+        "flash",
+        1.0
+      ],
+      [
+        5.02,
+        "fanfare",
+        0.55
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "talk",
+    "at": [
+      "line",
+      0,
+      0.1
+    ],
+    "b": 2,
+    "fx": "tear",
+    "energy": true
+  },
+  {
+    "kind": "game",
+    "clip": "rooms",
+    "at": [
+      "turn",
+      1,
+      0.2
+    ],
+    "b": 1,
+    "fx": "cut",
+    "energy": true
+  },
+  {
+    "kind": "game",
+    "clip": "filter",
+    "at": [
+      "open",
+      0,
+      1.2
+    ],
+    "speed": 1.5,
+    "b": 1,
+    "fx": "cut",
+    "energy": true
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "pick",
+        0,
+        -40
+      ],
+      [
+        2,
+        "merge",
+        0,
+        0
+      ],
+      [
+        3,
+        "merge",
+        0,
+        110
+      ],
+      [
+        4.5,
+        "merge",
+        0,
+        235
+      ],
+      [
+        5,
+        "flash",
+        0,
+        0
+      ],
+      [
+        5.5,
+        "flash",
+        0,
+        40
+      ],
+      [
+        6,
+        "flash",
+        0,
+        85
+      ],
+      [
+        8,
+        "flash",
+        0,
+        140
+      ]
+    ],
+    "b": 8,
+    "fx": "glitch-in",
+    "energy": true,
+    "sfx": [
+      [
+        2,
+        "mix",
+        0.9
+      ],
+      [
+        5,
+        "flash",
+        1.0
+      ],
+      [
+        5.02,
+        "fanfare",
+        0.55
+      ]
+    ]
+  },
+  {
+    "kind": "site",
+    "at": "manual",
+    "skip": 1.6,
+    "b": 1,
+    "fx": "tear",
+    "energy": true
+  },
+  {
+    "kind": "game",
+    "clip": "rooms",
+    "at": [
+      "turn",
+      3,
+      0.0
+    ],
+    "b": 1,
+    "fx": "cut",
+    "energy": true
+  },
+  {
+    "kind": "site",
+    "at": "combine",
+    "skip": 0.6,
+    "b": 1,
+    "fx": "cut",
+    "energy": true
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "flash",
+        1,
+        86
+      ],
+      [
+        1,
+        "flash",
+        1,
+        114
+      ]
+    ],
+    "b": 1,
+    "fx": "glitch-in",
+    "energy": true,
+    "sfx": [
+      [
+        0,
+        "flash",
+        0.8
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "pick",
+        8,
+        -10
+      ],
+      [
+        1.5,
+        "merge",
+        8,
+        0
+      ],
+      [
+        2.5,
+        "merge",
+        8,
+        200
+      ],
+      [
+        3,
+        "flash",
+        8,
+        0
+      ],
+      [
+        3.5,
+        "flash",
+        8,
+        82
+      ],
+      [
+        6,
+        "flash",
+        8,
+        152
+      ]
+    ],
+    "b": 6,
+    "fx": "glitch-in",
+    "energy": true,
+    "sfx": [
+      [
+        1.5,
+        "mix",
+        0.9
+      ],
+      [
+        3,
+        "flash",
+        1.0
+      ],
+      [
+        3.02,
+        "fanfare",
+        0.55
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "flash",
+        5,
+        88
+      ],
+      [
+        0.5,
+        "flash",
+        5,
+        102
+      ]
+    ],
+    "b": 0.5,
+    "fx": "cut",
+    "stutter": true,
+    "energy": true,
+    "sfx": [
+      [
+        0,
+        "flash",
+        0.7
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "flash",
+        2,
+        88
+      ],
+      [
+        0.5,
+        "flash",
+        2,
+        102
+      ]
+    ],
+    "b": 0.5,
+    "fx": "cut",
+    "stutter": true,
+    "energy": true,
+    "sfx": [
+      [
+        0,
+        "flash",
+        0.7
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "flash",
+        4,
+        88
+      ],
+      [
+        0.5,
+        "flash",
+        4,
+        102
+      ]
+    ],
+    "b": 0.5,
+    "fx": "cut",
+    "stutter": true,
+    "energy": true,
+    "sfx": [
+      [
+        0,
+        "flash",
+        0.7
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "combines",
+    "keys": [
+      [
+        0,
+        "flash",
+        7,
+        88
+      ],
+      [
+        0.5,
+        "flash",
+        7,
+        102
+      ]
+    ],
+    "b": 0.5,
+    "fx": "cut",
+    "stutter": true,
+    "energy": true,
+    "sfx": [
+      [
+        0,
+        "flash",
+        0.7
+      ]
+    ]
+  },
+  {
+    "kind": "pair",
+    "at": [
+      "linked",
+      0,
+      1.0
+    ],
+    "b": 2,
+    "fx": "dither-in",
+    "caption": "BRING SOMEONE.",
+    "energy": true
+  },
+  {
+    "kind": "pair",
+    "at": [
+      "clash",
+      0,
+      -0.4
+    ],
+    "b": 2,
+    "fx": "cut",
+    "energy": true
+  },
+  {
+    "kind": "card",
+    "lines": [
+      "DOWN: IT WATCHES"
+    ],
+    "b": 2,
+    "fx": "glitch-in"
+  },
+  {
+    "kind": "game",
+    "clip": "fight",
+    "at": [
+      "telegraph",
+      0,
+      0.25
+    ],
+    "b": 2,
+    "fx": "cut"
+  },
+  {
+    "kind": "game",
+    "clip": "fight",
+    "at": [
+      "pan",
+      0,
+      -0.05
+    ],
+    "b": 1,
+    "fx": "tear",
+    "sfx": [
+      [
+        0,
+        "glitch",
+        0.8
+      ]
+    ]
+  },
+  {
+    "kind": "game",
+    "clip": "fight",
+    "at": [
+      "scene",
+      0,
+      2.2
+    ],
+    "b": 3,
+    "fx": "glitch-in",
+    "shake": true,
+    "energy": true,
+    "sfx": [
+      [
+        0,
+        "flash",
+        1.0
+      ]
+    ]
+  },
+  {
+    "kind": "end",
+    "b": 10,
+    "fx": "glitch-in",
+    "sfx": [
+      [
+        0,
+        "flash",
+        0.9
+      ],
+      [
+        0.05,
+        "fanfare",
+        0.8
+      ]
+    ]
+  }
+]

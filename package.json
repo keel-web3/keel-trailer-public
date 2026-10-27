@@ -1,0 +1,97 @@
+{
+  "name": "@keel/trailer",
+  "version": "0.2.0",
+  "private": false,
+  "description": "Deterministic KEEL trailers, typed scene programs, capture adapters and visual/code inspection for agents.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": {
+      "types": "./dist/schema.d.ts",
+      "import": "./dist/schema.js"
+    },
+    "./probe": {
+      "types": "./dist/probe.d.ts",
+      "import": "./dist/probe.js"
+    },
+    "./mcp": {
+      "types": "./dist/mcp.d.ts",
+      "import": "./dist/mcp.js"
+    },
+    "./program": {
+      "types": "./dist/program.d.ts",
+      "import": "./dist/program.js"
+    },
+    "./music": {
+      "types": "./dist/music.d.ts",
+      "import": "./dist/music.js"
+    },
+    "./onchain": {
+      "types": "./dist/onchain.d.ts",
+      "import": "./dist/onchain.js"
+    },
+    "./timeline": {
+      "types": "./dist/timeline.d.ts",
+      "import": "./dist/timeline.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "keel-trailer": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "pnpm build && node --test --test-concurrency=1 test/*.test.ts",
+    "schema": "pnpm build && node dist/export-schemas.js",
+    "test:mcp": "pnpm build && node --test test/mcp.test.ts",
+    "prepack": "pnpm build",
+    "types:generate": "node scripts/tool-types.ts",
+    "fixtures": "node scripts/test-clips.ts"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "optionalDependencies": {
+    "playwright": "1.62.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keel-web3/keel-trailer-public.git"
+  },
+  "packageManager": "pnpm@10.15.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "python/",
+    "assets/",
+    "schemas/",
+    "editor/",
+    "keel.plugin.json",
+    "requirements.txt",
+    "README.md",
+    "LICENSE",
+    "examples/basic/",
+    "NOTICE.md"
+  ],
+  "homepage": "https://github.com/keel-web3/keel-trailer-public#readme",
+  "bugs": {
+    "url": "https://github.com/keel-web3/keel-trailer-public/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.20.1"
+  },
+  "dependencies": {
+    "esbuild": "0.25.9"
+  },
+  "license": "MIT"
+}

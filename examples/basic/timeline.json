@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "name": "synthetic-demo",
+  "fps": 12,
+  "seed": 7,
+  "tempo": {"bpm": 120},
+  "sources": [
+    {"id": "grid", "kind": "video", "path": "test-grid.mp4", "pixelArt": true},
+    {"id": "orbit", "kind": "video", "path": "test-orbit.mp4", "pixelArt": true}
+  ],
+  "shots": [
+    {"id": "opening", "kind": "video", "source": "grid", "startBeat": 0, "beats": 4, "in": 0, "fit": "integer"},
+    {"id": "resolve", "kind": "video", "source": "orbit", "startBeat": 4, "beats": 4, "in": 0, "fit": "integer", "transition": {"type": "dither", "beats": 0.5, "pixelScale": 2}}
+  ],
+  "audio": [],
+  "targets": [{"id": "wide", "width": 192, "height": 108, "silent": true, "maxBytes": 100000}]
+}

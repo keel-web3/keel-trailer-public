@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {pathToFileURL} from 'node:url';
+import {createScoreCodec,assertScore,importMidi} from '../dist/music.js';
+import {compareAudio} from '../dist/audio-test.js';
+const root=process.env.KEEL_ENGINE_ROOT;
+const score=()=>({version:1,bpm:120,ppq:96,duration:768,instruments:[{wave:'sawtooth',attack:5,decay:100,sustain:500,release:100,gain:180}],notes:[{tick:0,duration:96,pitch:60,velocity:100,instrument:0},{tick:192,duration:48,pitch:67,velocity:80,instrument:0}]});
+test('authored music codec roundtrip and strict validation',{skip:!root},async()=>{const c=createScoreCodec(await import(pathToFileURL(root+'/packages/codec/src/runtime.ts'))),s=score(),b=c.encode(s);assert.deepEqual(c.decode(b),s);assert.ok(b.length<100);assert.throws(()=>c.decode(new Uint8Array([...b,1])));for(const mutate of [s=>s.notes[0].velocity=128,s=>s.notes[0].instrument=2,s=>s.instruments[0].wave='url',s=>s.notes.reverse()]){const s=score();mutate(s);assert.throws(()=>assertScore(s));}});
+test('MIDI imports exact note times, rejects truncated and expressive data',()=>{const b=Buffer.from('4d546864000000060000000100604d54726b0000000c00903c6460803c0000ff2f00','hex');const r=importMidi(b);assert.equal(r.score.notes[0].pitch,60);assert.equal(r.score.notes[0].duration,96);assert.equal(r.score.bpm,120);assert.ok(r.warnings.length);assert.throws(()=>importMidi(b.subarray(0,-1)));const pitchbend=Buffer.from(b);pitchbend[23]=0xe0;assert.throws(()=>importMidi(pitchbend));});
+test('audio comparison reports signal/timing failures and never claims perceptual equivalence',()=>{const rate=22050,a=Float32Array.from({length:rate},(_,i)=>Math.sin(i*440*2*Math.PI/rate)*.2*(i<rate/2?1:.2));const same=compareAudio(a,a,rate);assert.equal(same.technicalPass,true);assert.ok(same.metrics.waveformCosine>.999);assert.equal(same.auditionRequired,true);assert.equal(same.perceptualEquivalence,'not-established');const silent=compareAudio(a,new Float32Array(a.length),rate);assert.equal(silent.technicalPass,false);const short=compareAudio(a,a.slice(0,a.length/2),rate);assert.equal(short.checks.duration,false);});

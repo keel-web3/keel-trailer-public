@@ -1,0 +1,988 @@
+{
+  "version": 1,
+  "name": "CRUCIBLE-trailer",
+  "fps": 30,
+  "seed": 7,
+  "tempo": {
+    "beatSeconds": 0.46879578083797246,
+    "bpm": 127.9875,
+    "firstDownbeat": 0,
+    "audioSource": "bed",
+    "mode": "declared"
+  },
+  "sources": [
+    {
+      "id": "title",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/title.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/title.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "3d7eda778d0178508e0c033520a0fe640701360812a589cb9c405fde26420d7f"
+    },
+    {
+      "id": "combines",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/combines.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/combines.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "cc72a55536f81238b6a40625538119547387d40e62391f1a92afb26fcdda3b4e"
+    },
+    {
+      "id": "talk",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/talk.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/talk.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "ee5a9eedc03301a80d851e05216561a8fce9ee09f9d36cc012cae4c9fe18a943"
+    },
+    {
+      "id": "rooms",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/rooms.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/rooms.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "4774572a0e5a08ca51baf8743be1cba1a06bce77aa0d17b71e2140420eefb45b"
+    },
+    {
+      "id": "filter",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/filter.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/filter.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "fdf8d03a2072119fbb9db362dcdf6ae452697d2da439b87f362d40b5657a657d"
+    },
+    {
+      "id": "link-host",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/link-host.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/link-host.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "8dc87bcf9ad35d60f9ca571b080d9586033786a1d184a88c469518e692981021"
+    },
+    {
+      "id": "link-guest",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/link-guest.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/link-guest.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "b394d9787d8976c9d00844f4a79281920ee7f5732464eb2a3827c8e6b8c01fd8"
+    },
+    {
+      "id": "fight",
+      "kind": "gameboy",
+      "path": "../../artifacts/crucible/captures/game/fight.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/game/fight.json",
+      "fps": 59.7275,
+      "pixelArt": true,
+      "sha256": "eabe1ec95bf3f185eca404222a0717594db5ee5ece0f63f6a6be528228bdedd0"
+    },
+    {
+      "id": "tour",
+      "kind": "web",
+      "path": "../../artifacts/crucible/captures/site/site-1920x1080.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/site/site-1920x1080.json",
+      "fps": 30,
+      "sha256": "346905f90452cb6cdceb9b54686503533d07fe4f007fea6fa844aeb19d6d6816"
+    },
+    {
+      "id": "opening",
+      "kind": "web",
+      "path": "../../artifacts/crucible/captures/site/site-1920x1080-opening.mkv",
+      "metadataPath": "../../artifacts/crucible/captures/site/site-1920x1080-opening.json",
+      "fps": 30,
+      "sha256": "1664218ca3110b65ae66eab3d59a4abd3d92c5ffb2719e4efa935926deb6c0ef",
+      "variants": [
+        {
+          "target": "9x16",
+          "path": "../../artifacts/crucible/captures/site/site-1080x1920-opening.mkv",
+          "metadataPath": "../../artifacts/crucible/captures/site/site-1080x1920-opening.json"
+        },
+        {
+          "target": "1x1",
+          "path": "../../artifacts/crucible/captures/site/site-1080x1080-opening.mkv",
+          "metadataPath": "../../artifacts/crucible/captures/site/site-1080x1080-opening.json"
+        }
+      ]
+    },
+    {
+      "id": "bed",
+      "kind": "audio",
+      "path": "../../artifacts/crucible/captures/music/bed-128.wav",
+      "sha256": "e9e3d7d950eebfa73222be5fe2ae5c40d6990430a3e7eb46c5d3e567fdbb90f4"
+    },
+    {
+      "id": "mix",
+      "kind": "audio",
+      "path": "../../artifacts/crucible/mix.wav",
+      "sha256": "bb23232f9a4d0c1891013e11b0b2337b30f09c83d00cdfea5aa984b5faf1aebc"
+    },
+    {
+      "id": "flash",
+      "kind": "audio",
+      "path": "../../artifacts/crucible/flash.wav",
+      "sha256": "bd5c0326e17486ec297f5c508badce7afde71aa746fdbbe7707089e6853b0088"
+    },
+    {
+      "id": "fanfare",
+      "kind": "audio",
+      "path": "../../artifacts/crucible/fanfare.wav",
+      "sha256": "c81b8f3c807ccc33a42f6ca6cb6aa9c5428441194988631eae7ea603925c6351"
+    },
+    {
+      "id": "glitch",
+      "kind": "audio",
+      "path": "../../artifacts/crucible/glitch.wav",
+      "sha256": "1d4bec22c19e4c382320a2e4fd4bb100c19baa18d0e365c8a773ac1234d215b6"
+    },
+    {
+      "id": "chime",
+      "kind": "audio",
+      "path": "../../artifacts/crucible/chime.wav",
+      "sha256": "b4d715e1df9ba55741632b23427a609df2d9914af06b1824aed22efd0857d10b"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-01",
+      "startBeat": 0,
+      "beats": 16,
+      "kind": "opening",
+      "transition": {
+        "type": "match-cut",
+        "referenceEffect": "cut",
+        "sourceRect": {
+          "x": 480,
+          "y": 131,
+          "width": 960,
+          "height": 864
+        },
+        "targetRect": {
+          "x": 400,
+          "y": 36,
+          "width": 1120,
+          "height": 1008
+        },
+        "zoomStartBeat": 14.5
+      },
+      "source": "opening",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 0
+        },
+        {
+          "beat": 1.5,
+          "frame": 36
+        },
+        {
+          "beat": 9,
+          "frame": 169
+        },
+        {
+          "beat": 12,
+          "frame": 213
+        },
+        {
+          "beat": 13.5,
+          "frame": 238
+        },
+        {
+          "beat": 13.51,
+          "frame": 240
+        },
+        {
+          "beat": 15,
+          "frame": 253
+        },
+        {
+          "beat": 16,
+          "frame": 287
+        }
+      ],
+      "rampVariants": [
+        {
+          "target": "16x9",
+          "ramp": [
+            {
+              "beat": 0,
+              "frame": 0
+            },
+            {
+              "beat": 1.5,
+              "frame": 36
+            },
+            {
+              "beat": 9,
+              "frame": 169
+            },
+            {
+              "beat": 12,
+              "frame": 213
+            },
+            {
+              "beat": 13.5,
+              "frame": 238
+            },
+            {
+              "beat": 13.51,
+              "frame": 240
+            },
+            {
+              "beat": 15,
+              "frame": 253
+            },
+            {
+              "beat": 16,
+              "frame": 287
+            }
+          ]
+        },
+        {
+          "target": "9x16",
+          "ramp": [
+            {
+              "beat": 0,
+              "frame": 0
+            },
+            {
+              "beat": 1.5,
+              "frame": 36
+            },
+            {
+              "beat": 9,
+              "frame": 169
+            },
+            {
+              "beat": 12,
+              "frame": 213
+            },
+            {
+              "beat": 13.5,
+              "frame": 238
+            },
+            {
+              "beat": 13.51,
+              "frame": 240
+            },
+            {
+              "beat": 15,
+              "frame": 253
+            },
+            {
+              "beat": 16,
+              "frame": 287
+            }
+          ]
+        },
+        {
+          "target": "1x1",
+          "ramp": [
+            {
+              "beat": 0,
+              "frame": 0
+            },
+            {
+              "beat": 1.5,
+              "frame": 36
+            },
+            {
+              "beat": 9,
+              "frame": 170
+            },
+            {
+              "beat": 12,
+              "frame": 214
+            },
+            {
+              "beat": 13.5,
+              "frame": 238
+            },
+            {
+              "beat": 13.51,
+              "frame": 240
+            },
+            {
+              "beat": 15,
+              "frame": 253
+            },
+            {
+              "beat": 16,
+              "frame": 287
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shot-02",
+      "startBeat": 16,
+      "beats": 2,
+      "kind": "video",
+      "transition": {
+        "type": "dither",
+        "referenceEffect": "drop"
+      },
+      "source": "title",
+      "in": 23.238876564396634,
+      "energy": true
+    },
+    {
+      "id": "shot-03",
+      "startBeat": 18,
+      "beats": 2,
+      "kind": "card",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "text": {
+        "lines": [
+          "MAKE SOMETHING."
+        ],
+        "font": "../../artifacts/crucible/crucible-pixel.ttf",
+        "fontSize": 8,
+        "scale": 8,
+        "typingCps": 40
+      }
+    },
+    {
+      "id": "shot-04",
+      "startBeat": 20,
+      "beats": 8,
+      "kind": "video",
+      "transition": {
+        "type": "glitch",
+        "referenceEffect": "glitch-in"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 14128
+        },
+        {
+          "beat": 2,
+          "frame": 14461
+        },
+        {
+          "beat": 3,
+          "frame": 14571
+        },
+        {
+          "beat": 4.5,
+          "frame": 14696
+        },
+        {
+          "beat": 5,
+          "frame": 14963
+        },
+        {
+          "beat": 5.5,
+          "frame": 15003
+        },
+        {
+          "beat": 6,
+          "frame": 15048
+        },
+        {
+          "beat": 8,
+          "frame": 15103
+        }
+      ],
+      "energy": true
+    },
+    {
+      "id": "shot-05",
+      "startBeat": 28,
+      "beats": 2,
+      "kind": "video",
+      "transition": {
+        "type": "scanline-tear",
+        "referenceEffect": "tear"
+      },
+      "source": "talk",
+      "in": 7.015194006111088,
+      "energy": true
+    },
+    {
+      "id": "shot-06",
+      "startBeat": 30,
+      "beats": 1,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "rooms",
+      "in": 5.826461847557658,
+      "energy": true
+    },
+    {
+      "id": "shot-07",
+      "startBeat": 31,
+      "beats": 1,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "filter",
+      "in": 1.7077560587668996,
+      "speed": 1.5,
+      "energy": true
+    },
+    {
+      "id": "shot-08",
+      "startBeat": 32,
+      "beats": 8,
+      "kind": "video",
+      "transition": {
+        "type": "glitch",
+        "referenceEffect": "glitch-in"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 90
+        },
+        {
+          "beat": 2,
+          "frame": 681
+        },
+        {
+          "beat": 3,
+          "frame": 791
+        },
+        {
+          "beat": 4.5,
+          "frame": 916
+        },
+        {
+          "beat": 5,
+          "frame": 1112
+        },
+        {
+          "beat": 5.5,
+          "frame": 1152
+        },
+        {
+          "beat": 6,
+          "frame": 1197
+        },
+        {
+          "beat": 8,
+          "frame": 1252
+        }
+      ],
+      "energy": true
+    },
+    {
+      "id": "shot-09",
+      "startBeat": 40,
+      "beats": 1,
+      "kind": "video",
+      "transition": {
+        "type": "scanline-tear",
+        "referenceEffect": "tear"
+      },
+      "source": "tour",
+      "in": 25.1,
+      "energy": true
+    },
+    {
+      "id": "shot-10",
+      "startBeat": 41,
+      "beats": 1,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "rooms",
+      "in": 16.876648110167007,
+      "energy": true
+    },
+    {
+      "id": "shot-11",
+      "startBeat": 42,
+      "beats": 1,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "tour",
+      "in": 20.1,
+      "energy": true
+    },
+    {
+      "id": "shot-12",
+      "startBeat": 43,
+      "beats": 1,
+      "kind": "video",
+      "transition": {
+        "type": "glitch",
+        "referenceEffect": "glitch-in"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 12734
+        },
+        {
+          "beat": 1,
+          "frame": 12762
+        }
+      ],
+      "energy": true
+    },
+    {
+      "id": "shot-13",
+      "startBeat": 44,
+      "beats": 6,
+      "kind": "video",
+      "transition": {
+        "type": "glitch",
+        "referenceEffect": "glitch-in"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 19684
+        },
+        {
+          "beat": 1.5,
+          "frame": 19939
+        },
+        {
+          "beat": 2.5,
+          "frame": 20139
+        },
+        {
+          "beat": 3,
+          "frame": 20492
+        },
+        {
+          "beat": 3.5,
+          "frame": 20574
+        },
+        {
+          "beat": 6,
+          "frame": 20644
+        }
+      ],
+      "energy": true
+    },
+    {
+      "id": "shot-14",
+      "startBeat": 50,
+      "beats": 0.5,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 17067
+        },
+        {
+          "beat": 0.5,
+          "frame": 17081
+        }
+      ],
+      "energy": true,
+      "stutter": true
+    },
+    {
+      "id": "shot-15",
+      "startBeat": 50.5,
+      "beats": 0.5,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 13717
+        },
+        {
+          "beat": 0.5,
+          "frame": 13731
+        }
+      ],
+      "energy": true,
+      "stutter": true
+    },
+    {
+      "id": "shot-16",
+      "startBeat": 51.0,
+      "beats": 0.5,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 16145
+        },
+        {
+          "beat": 0.5,
+          "frame": 16159
+        }
+      ],
+      "energy": true,
+      "stutter": true
+    },
+    {
+      "id": "shot-17",
+      "startBeat": 51.5,
+      "beats": 0.5,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "combines",
+      "ramp": [
+        {
+          "beat": 0,
+          "frame": 19385
+        },
+        {
+          "beat": 0.5,
+          "frame": 19399
+        }
+      ],
+      "energy": true,
+      "stutter": true
+    },
+    {
+      "id": "shot-18",
+      "startBeat": 52.0,
+      "beats": 2,
+      "kind": "pair",
+      "transition": {
+        "type": "dither",
+        "referenceEffect": "dither-in"
+      },
+      "source": "link-host",
+      "secondSource": "link-guest",
+      "in": 7.467247080490561,
+      "energy": true,
+      "caption": {
+        "lines": [
+          "BRING SOMEONE."
+        ],
+        "font": "../../artifacts/crucible/crucible-pixel.ttf",
+        "fontSize": 8,
+        "scale": 5,
+        "typingCps": 34
+      }
+    },
+    {
+      "id": "shot-19",
+      "startBeat": 54.0,
+      "beats": 2,
+      "kind": "pair",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "link-host",
+      "secondSource": "link-guest",
+      "in": 21.916202754175213,
+      "energy": true
+    },
+    {
+      "id": "shot-20",
+      "startBeat": 56.0,
+      "beats": 2,
+      "kind": "card",
+      "transition": {
+        "type": "glitch",
+        "referenceEffect": "glitch-in"
+      },
+      "text": {
+        "lines": [
+          "DOWN: IT WATCHES"
+        ],
+        "font": "../../artifacts/crucible/crucible-pixel.ttf",
+        "fontSize": 8,
+        "scale": 8,
+        "typingCps": 40
+      }
+    },
+    {
+      "id": "shot-21",
+      "startBeat": 58.0,
+      "beats": 2,
+      "kind": "video",
+      "transition": {
+        "type": "cut",
+        "referenceEffect": "cut"
+      },
+      "source": "fight",
+      "in": 1.2557029843874263
+    },
+    {
+      "id": "shot-22",
+      "startBeat": 60.0,
+      "beats": 1,
+      "kind": "video",
+      "transition": {
+        "type": "scanline-tear",
+        "referenceEffect": "tear"
+      },
+      "source": "fight",
+      "in": 3.030429868988322
+    },
+    {
+      "id": "shot-23",
+      "startBeat": 61.0,
+      "beats": 3,
+      "kind": "video",
+      "transition": {
+        "type": "glitch",
+        "referenceEffect": "glitch-in"
+      },
+      "source": "fight",
+      "in": 5.759491021723662,
+      "energy": true,
+      "shake": true
+    },
+    {
+      "id": "shot-24",
+      "startBeat": 64.0,
+      "beats": 10,
+      "kind": "end",
+      "transition": {
+        "type": "glitch",
+        "referenceEffect": "glitch-in"
+      },
+      "source": "title"
+    }
+  ],
+  "audio": [
+    {
+      "id": "bed",
+      "source": "bed",
+      "role": "bed",
+      "startBeat": 0,
+      "gain": 1,
+      "fadeIn": 0.05,
+      "fadeOut": 1.2,
+      "fadeOutAt": 34.79088778200996
+    },
+    {
+      "id": "fx-0-0",
+      "source": "chime",
+      "role": "sfx",
+      "startBeat": 12,
+      "gain": 0.9
+    },
+    {
+      "id": "fx-1-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 16,
+      "gain": 1.0
+    },
+    {
+      "id": "fx-1-1",
+      "source": "glitch",
+      "role": "sfx",
+      "startBeat": 16,
+      "gain": 0.8
+    },
+    {
+      "id": "fx-3-0",
+      "source": "mix",
+      "role": "sfx",
+      "startBeat": 22,
+      "gain": 0.9
+    },
+    {
+      "id": "fx-3-1",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 25,
+      "gain": 1.0
+    },
+    {
+      "id": "fx-3-2",
+      "source": "fanfare",
+      "role": "sfx",
+      "startBeat": 25.02,
+      "gain": 0.55
+    },
+    {
+      "id": "fx-7-0",
+      "source": "mix",
+      "role": "sfx",
+      "startBeat": 34,
+      "gain": 0.9
+    },
+    {
+      "id": "fx-7-1",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 37,
+      "gain": 1.0
+    },
+    {
+      "id": "fx-7-2",
+      "source": "fanfare",
+      "role": "sfx",
+      "startBeat": 37.019999999999996,
+      "gain": 0.55
+    },
+    {
+      "id": "fx-11-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 43,
+      "gain": 0.8
+    },
+    {
+      "id": "fx-12-0",
+      "source": "mix",
+      "role": "sfx",
+      "startBeat": 45.5,
+      "gain": 0.9
+    },
+    {
+      "id": "fx-12-1",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 47,
+      "gain": 1.0
+    },
+    {
+      "id": "fx-12-2",
+      "source": "fanfare",
+      "role": "sfx",
+      "startBeat": 47.02,
+      "gain": 0.55
+    },
+    {
+      "id": "fx-13-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 50,
+      "gain": 0.7
+    },
+    {
+      "id": "fx-14-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 50.5,
+      "gain": 0.7
+    },
+    {
+      "id": "fx-15-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 51.0,
+      "gain": 0.7
+    },
+    {
+      "id": "fx-16-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 51.5,
+      "gain": 0.7
+    },
+    {
+      "id": "fx-auto-19",
+      "source": "glitch",
+      "role": "sfx",
+      "startBeat": 56.0,
+      "gain": 0.5
+    },
+    {
+      "id": "fx-21-0",
+      "source": "glitch",
+      "role": "sfx",
+      "startBeat": 60.0,
+      "gain": 0.8
+    },
+    {
+      "id": "fx-22-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 61.0,
+      "gain": 1.0
+    },
+    {
+      "id": "fx-23-0",
+      "source": "flash",
+      "role": "sfx",
+      "startBeat": 64.0,
+      "gain": 0.9
+    },
+    {
+      "id": "fx-23-1",
+      "source": "fanfare",
+      "role": "sfx",
+      "startBeat": 64.05,
+      "gain": 0.8
+    }
+  ],
+  "targets": [
+    {
+      "id": "16x9",
+      "width": 1920,
+      "height": 1080,
+      "maxBytes": 14500000,
+      "loudness": -14,
+      "truePeak": -1.5,
+      "posterBeat": 70.399375
+    },
+    {
+      "id": "9x16",
+      "width": 1080,
+      "height": 1920,
+      "maxBytes": 14500000,
+      "loudness": -14,
+      "truePeak": -1.5,
+      "posterBeat": 70.399375
+    },
+    {
+      "id": "1x1",
+      "width": 1080,
+      "height": 1080,
+      "maxBytes": 14500000,
+      "loudness": -14,
+      "truePeak": -1.5,
+      "posterBeat": 70.399375
+    }
+  ],
+  "reference": {
+    "profile": "crucible-v3",
+    "capturesRoot": "../../artifacts/crucible/captures",
+    "font": "../../artifacts/crucible/crucible-pixel.ttf",
+    "title": "CRUCIBLE.EXE",
+    "subtitle": "8 MiB \u00b7 GAME BOY COLOR",
+    "url": "CRUCIBLE.ONKEEL.IO",
+    "handle": "@R4VONUS"
+  }
+}
